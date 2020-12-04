@@ -5,7 +5,7 @@
 //  Created by Scott J. Goldman on 11/16/13.
 //  Copyright (c) 2013 Scott J. Goldman. All rights reserved.
 //
-#import <DevMateKit/DevMateKit.h>
+//#import <DevMateKit/DevMateKit.h>
 
 #import "AppDelegate.h"
 #import "AsyncSocket.h"
@@ -56,8 +56,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     [DiagnosticLog setup];
-    [DevMateKit sendTrackingReport:nil delegate:nil];
-    [DevMateKit setupIssuesController:nil reportingUnhandledIssues:YES];
+    //[DevMateKit sendTrackingReport:nil delegate:nil];
+    //[DevMateKit setupIssuesController:nil reportingUnhandledIssues:YES];
     [[SUUpdater sharedUpdater] checkForUpdatesInBackground];
 }
 

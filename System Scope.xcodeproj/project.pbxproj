@@ -29,8 +29,6 @@
 		414606B31842D5400015D8AB /* ConnectionLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 414606B21842D5400015D8AB /* ConnectionLoginController.m */; };
 		415D0B631EC96E4B00D77B86 /* DiagnosticLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 415D0B621EC96E4B00D77B86 /* DiagnosticLog.m */; };
 		416B915A183967BF00783B18 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 416B9159183967BF00783B18 /* AsyncSocket.m */; };
-		416E34701EDA5AA400BB6F36 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 416E346F1EDA5AA400BB6F36 /* DevMateKit.framework */; };
-		416E34711EDA5B8400BB6F36 /* DevMateKit.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 416E346F1EDA5AA400BB6F36 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		41B09AC0185F94CC00DBED34 /* rc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 41B09ABF185F94CC00DBED34 /* rc4.c */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		41C76C82184322380000FBEA /* keycodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 41C76C81184322380000FBEA /* keycodes.c */; };
 		41C7BD60184B1D8700FD7B2B /* NSAppSubclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C7BD5F184B1D8700FD7B2B /* NSAppSubclass.m */; };
@@ -48,7 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				416E34711EDA5B8400BB6F36 /* DevMateKit.framework in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,7 +96,6 @@
 		415D0B621EC96E4B00D77B86 /* DiagnosticLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiagnosticLog.m; sourceTree = "<group>"; };
 		416B9158183967BF00783B18 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		416B9159183967BF00783B18 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
-		416E346F1EDA5AA400BB6F36 /* DevMateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DevMateKit.framework; sourceTree = "<group>"; };
 		41B09ABF185F94CC00DBED34 /* rc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rc4.c; sourceTree = "<group>"; };
 		41B09AC1185FAC7D00DBED34 /* rc4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
 		41C76C81184322380000FBEA /* keycodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = keycodes.c; sourceTree = "<group>"; };
@@ -121,7 +117,6 @@
 			files = (
 				41C7BD67184C102C00FD7B2B /* QuartzCore.framework in Frameworks */,
 				41C7BD65184C048100FD7B2B /* Carbon.framework in Frameworks */,
-				416E34701EDA5AA400BB6F36 /* DevMateKit.framework in Frameworks */,
 				413972A31838A39C00653313 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +145,6 @@
 		413972A11838A39C00653313 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				416E346F1EDA5AA400BB6F36 /* DevMateKit.framework */,
 				41C7BD66184C102C00FD7B2B /* QuartzCore.framework */,
 				41C7BD64184C048100FD7B2B /* Carbon.framework */,
 				413972A21838A39C00653313 /* Cocoa.framework */,
@@ -475,7 +469,6 @@
 					"$(inherited)",
 					.,
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DevMateKit.framework/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemoteConsoleClient/System Scope-Prefix.pch";
@@ -503,7 +496,6 @@
 					"$(inherited)",
 					.,
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DevMateKit.framework/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemoteConsoleClient/System Scope-Prefix.pch";
@@ -582,7 +574,6 @@
 					"$(inherited)",
 					.,
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/DevMateKit.framework/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RemoteConsoleClient/System Scope-Prefix.pch";
