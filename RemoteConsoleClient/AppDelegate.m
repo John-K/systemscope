@@ -58,13 +58,13 @@
     [DiagnosticLog setup];
     //[DevMateKit sendTrackingReport:nil delegate:nil];
     //[DevMateKit setupIssuesController:nil reportingUnhandledIssues:YES];
-    [[SUUpdater sharedUpdater] checkForUpdatesInBackground];
+    //[[SUUpdater sharedUpdater] checkForUpdatesInBackground];
 }
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification
 {
-    [SUUpdater sharedUpdater].automaticallyChecksForUpdates = YES;
-    [SUUpdater sharedUpdater].automaticallyDownloadsUpdates = YES;
+    //[SUUpdater sharedUpdater].automaticallyChecksForUpdates = YES;
+    //[SUUpdater sharedUpdater].automaticallyDownloadsUpdates = YES;
     [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(handleURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
 
